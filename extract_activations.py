@@ -1,3 +1,9 @@
+import locale
+locale.setlocale(locale.LC_ALL, 'en_US.UTF-8')
+
+import os
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+
 import torch
 from transformers import AutoModel, AutoTokenizer
 
